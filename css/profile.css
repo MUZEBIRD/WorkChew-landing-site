@@ -1,0 +1,239 @@
+/* Profile CSS */
+
+    #container2{
+      position: relative;
+      max-width: 1200px;
+      margin: 0px auto 100px;
+      margin-top:-300px;
+    }
+     #tagline{
+ padding-left:10px;
+ padding-right:10px;
+ }
+  #restaurantname{
+  background-color:white;
+  margin-top:20px;
+  height: 330px;
+}
+  #imgbox{
+    width:80%;
+    height:70%;
+    margin:0 auto;
+    padding-top:10px; 
+  }
+#imgslider{
+  padding-left:50px;
+}
+  table, th, td {
+   border-bottom: 1px solid #ecede1;
+}
+
+#hours{
+   background-color:white;
+}
+
+#description{
+  background-color:white;
+  margin-top:20px;
+}
+#neighborhood{
+  text-align: center;
+  margin-top:20px;
+}
+#slick-slide-control00{
+  display:none;
+  }
+#slick-slide-control01{
+  display:none;
+  }
+  #slick-slide-control02{
+    display:none;
+  }
+
+/*Big Screens */
+@media only screen and (min-width: 1250px) {
+
+   #backgroundimg{
+    height: 500px;
+    margin-top: 70px;
+    width: 100%;
+    z-index: -1;
+   }
+     #restaurantname {
+      background-color:white;
+      padding:10px 10px 10px 10px;
+      margin-bottom:30px
+     }
+      #imgslider{
+    padding: 20px 15px 15px 20px;
+  }
+  #imgbox{
+    width:80%;
+    height:50%;
+    margin:0 auto;
+    padding-top:10px; 
+  }
+    .slick-slide img {
+    
+      height:150px;
+    }
+    #leftside{
+      float:left;
+      width:65%;
+      padding-left:30px;
+     
+    }
+    #rightside{
+      float:right;
+      
+      padding-right:30px;
+      width:30%;
+    }
+}
+/*Smaller Screens */
+@media only screen and (max-width: 1250px) {
+
+    #backgroundimg{
+  height:500px;
+  margin-top:70px;
+  width:100%;
+  z-index: -1;
+  min-height: 400px;
+}
+
+#restaurantname{
+  margin-top:50px;
+   width:80%;
+   height:330px;
+   margin:0 auto;
+}
+  #leftside{
+    width:70%;
+    margin:0 auto;
+  }
+ #imgbox{
+    width:80%;
+    height:60%;
+    margin: auto;
+    left:0;
+    right:0;
+    padding-top:10px;
+  }
+  #description{
+    background-color:white;
+
+    width:760px;
+    margin: 0 auto 30px;
+  }
+  #restaurantname{
+    margin-bottom:30px;
+  }
+    #neighborhood{
+    margin: 0 auto 30px;
+    text-align:left;
+
+  }
+  #hours{
+
+    background-color:white;
+    margin: 0 auto 30px;
+    width:60%;
+  }
+
+
+.slick-slide img {
+      width: 100%;
+      height:150px;;
+}
+}
+@media only screen and (max-width: 900px) {
+ #tagline{font-size:19px;
+ padding-left:10px;
+ padding-right:10px;
+ }
+}
+@media only screen and (max-width: 450px) {
+ #tagline{font-size:16px;
+ padding-left:10px;
+ padding-right:10px;
+ }
+ #restaurantname{
+  margin-top:50px;
+   width:80%;
+   height:330px;
+   margin:0 auto;
+   padding-left:10px;
+   padding-right:10px;
+}
+}
+/*Mobile*/
+
+@media only screen and (max-width: 660px) {
+  #descriptionimg{
+    height:auto;
+  }
+    #backgroundimg{
+  height:300px;
+  margin-top:80px;
+  width:100%;
+  z-index: -1;
+  min-height: 400px;
+}
+
+#restaurantname{
+  margin-top:50px;
+   width:80%;
+   height:330px;
+   margin:0 auto;
+}
+  #leftside{
+    width:80%;
+    margin:0 auto;
+  }
+ #imgbox{
+    width:80%;
+    height:60%;
+    margin: auto;
+    left:0;
+    right:0;
+    padding-top:10px;
+  }
+  #description{
+    background-color:white;
+
+    width:100%%;
+    margin: 0 auto 30px;
+  }
+  #restaurantname{
+    margin-bottom:30px;
+  }
+    #neighborhood{
+    margin: 0 auto 30px;
+    text-align:center;
+    width:80%;
+
+  }
+  #hours{
+
+    background-color:white;
+    margin: 0 auto 30px;
+    width:80%;
+  }
+
+
+.slick-slide img {
+      width: 100%;
+      height:150px;;
+}
+}
+
+
+@media only screen and (max-width: 580px) {
+    #backgroundimg{
+  height:300px;
+  margin-top:60px;
+  width:100%;
+  z-index: -1;
+  min-height: 400px;
+}
+}

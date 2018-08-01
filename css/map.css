@@ -1,0 +1,122 @@
+
+#rightside{
+  float:right;
+  width:50%;
+  height:100%;
+  position: fixed;
+  right:10px;
+  margin-top:95px;
+
+}
+#leftside{
+  float:left;
+  width:100%;
+  height: 100%;
+  position: absolute;
+  margin-top:95px;
+  min-height: 100%;
+}
+#googlemap{
+      height:100%;
+      width:100%;
+}
+
+.restaurantimg{
+width:100%;
+height:100%;
+}
+
+.infoimg {
+  border-radius:50%;
+  height: 80px;
+  width:80px;
+  float:left;
+  z-index:-1;
+}
+.infodiv{
+  padding-left:10px;
+  width:220px;
+  height:80px;
+  overflow:hidden;
+}
+
+.restauranttitle{
+  text-align:center;
+  font-weight:500;
+  font-size:1.6vw;
+}
+.restaurantinfo{
+  text-align:center;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+  #googlemap { display: none; }
+  #rightside {
+        z-index:-1;
+    }
+    .restauranttitle{
+
+  font-size:3vw;
+}
+.restaurantinfo{
+  font-size: 1.5vw;
+
+}
+    }
+@media only screen and (min-width: 1000px) {
+    #leftside {
+        width:50%; 
+    }
+    .left-half {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.right-half {
+  background-color: #ededed;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+    
+}
+/* @media only screen and (max-width:1240px) {
+
+    .restaurantinfo{
+      font-size:.9em;
+    }
+   
+    
+}
+ 
+    
+}
+@media only screen and (max-width:700px) {
+    .restauranttitle{
+      font-size:24px;
+
+    }
+    .restaurantinfo{
+      font-size:.9em;
+    }
+   
+    
+}
+@media only screen and (max-width:550px) {
+    .restauranttitle{
+      font-size:20px;
+
+    }
+    .restaurantinfo{
+      font-size:.75em;
+    }
+ 
+    .website{display:none}
+    .location {
+        height:200px;
+    }
+  
+    
+}
