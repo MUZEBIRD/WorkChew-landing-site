@@ -143,6 +143,24 @@
  }
 
   }
+  
+        #login:hover{
+  cursor: pointer;
+}
+   #viewprofilebtn{
+   background-color: #EC692A;
+    border: none;
+    color: white;
+    border-radius:8px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:12px;
+    font-weight:500;
+    font-family: "brandon-grotesque", "sans-serif";
+}
+ 
     </style>
 
 
@@ -324,14 +342,14 @@
 
             <div class="right">
                 <ul class="menu uppercase crop">
-
-                    <li><a href="index.html">Home</a></li>
+                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="locations.html">Locations</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="whyPartner.html">Why Partner</a></li>
                     <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>
-                    <button id="login" onclick="location.href = 'membersignup.html'">SIGN-UP/LOG-IN</button>
+                    <button id="login" onclick="location.href = 'https://app.workchew.com/#/Login';">SIGN-UP/LOG-IN</button>
+                   <!-- <button style="margin-left:15px;" id="viewprofilebtn" onclick="workchewConnector.goToProfile();">VIEW PROFILE</button> --> 
                 </ul>
             </div>
         </div>
@@ -509,13 +527,14 @@
             </a>
 
             <ul class="mainMenu uppercase">
-           <li> <a href="membersignup.html" style="color:#EC692A;"> SIGN-UP/LOG-IN</a></li>
-		    <li><a href="index.html">Home</a></li>
+                    <li> <a href="https://app.workchew.com/#/Login"" style="color:#EC692A;"> SIGN-UP/LOG-IN</a></li>
+                   <!-- <li> <a href="...." id="viewprofile" style="color:#EC692A;"> VIEW PROFILE</a></li> -->
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="locations.html">Locations</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-		    <li><a href="whyPartner.html">Why Partner</a></li>
-		    <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>   
+                    <li><a href="whyPartner.html">Why Partner</a></li>
+                    <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>   
  	   </ul>
         </div>
     </nav>
@@ -608,6 +627,8 @@
   };
 </script>
 <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/mvbqpdba';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+ <script src="js/workchewConnect.js" type="text/javascript" name="main-scripts"></script>
+
 </body>
 
 

@@ -18,7 +18,8 @@
     <!-- Page Title -->
     <title>WorkChew</title>
     <!-- Fonts and Material Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" type="text/css" />
 
 
     <script src="https://use.typekit.net/pql2gmg.js"></script>
@@ -26,17 +27,11 @@
     try { Typekit.load({ async: false }); } catch (e) {}
     </script>
     <!-- Styles -->
-
-    <link href="css/slides.css" rel="stylesheet" type="text/css">
-    <link href="css/profile.css" rel="stylesheet" type="text/css">
+    <link href="css/slides.css" rel="stylesheet" type="text/css" />
     <!-- Custom Styles -->
     <!--link href="css/custom.css" rel="stylesheet" type="text/css"-->
-      <link rel="stylesheet" type="text/css" href="css/slick.css">
-<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
-
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-       <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/plugins.js" type="text/javascript" name="plugins"></script>
@@ -65,10 +60,6 @@
     </style>
 
     <style>
-      td{
-
-padding:15px 15px 15px 15px; 
-}
     .flex {
 
         display: flex;
@@ -134,42 +125,6 @@ padding:15px 15px 15px 15px;
         height: 20px;
         width: 20px;
     }
-    .slideimg{
-      width:150px;
-      height:100px;
-    }
-    .slider {
-        width: 50%;
-        margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-    
-    .slick-active {
-      opacity: .5;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-
 #login{
   background-color: #EC692A;
     border: none;
@@ -183,9 +138,7 @@ padding:15px 15px 15px 15px;
     font-weight:500;
     font-family: "brandon-grotesque", "sans-serif";
 }
-
-
-#login:hover{
+  #login:hover{
   cursor: pointer;
 }
    #viewprofilebtn{
@@ -201,7 +154,7 @@ padding:15px 15px 15px 15px;
     font-weight:500;
     font-family: "brandon-grotesque", "sans-serif";
 }
-
+ 
     </style>
 
 
@@ -386,11 +339,12 @@ padding:15px 15px 15px 15px;
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="locations.html">Locations</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="whyPartner.html">Why Partner</a></li>
                     <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>
                     <button id="login" onclick="location.href = 'https://app.workchew.com/#/Login';">SIGN-UP/LOG-IN</button>
-                   <!-- <button style="margin-left:15px;" id="viewprofilebtn" onclick="workchewConnector.goToProfile();">VIEW PROFILE</button> -->
+                   <!-- <button style="margin-left:15px;" id="viewprofilebtn" onclick="workchewConnector.goToProfile();">VIEW PROFILE</button> --> 
                 </ul>
             </div>
         </div>
@@ -469,122 +423,60 @@ padding:15px 15px 15px 15px;
     <p></p>
 
     <section class="slide whiteSlide" id="about">
-        <div class="content" style="background-color:#edecdc;">
-          <img id="backgroundimg" src="images/colada/colada.jpg" style="position:relative">
-          
-            <div class="container" id="container2">
-               <div id="restaurantname">
-                     <h2 style="padding-left:20px;padding-top:20px;text-align:center;font-size:28px;font-weight:500;">Colada Shop</h2>
-                         <p id="tagline" style="font-style: italic;text-align:center; font-weight:400;">"Come curious, leave cuban" </p>
-                              <div class="responsive" id="imgbox">
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada.jpg" data-lightbox="imggallery" data-title="Colada Shop"><img class="slideimg" src="images/colada/colada.jpg"></a>
-                                  </div>
-         
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada2.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada2.jpg" ></a>
-                                  </div>
-         
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada3.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada3.jpg" ></a>
-                                  </div>
-                             
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada4.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada4.jpg" ></a>
-                                  </div>
-         
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada5.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada5.jpg" ></a>
-                                  </div>
-         
+        <div class="content">
+            <div class="container">
+                <div class="wrap">
+                    <div class="fix-10-12">
+                        <h1 class="ae-1">WorkChew Events</h1>
+
+                        <a class="button cropBottom ae-3" style="background-color:#EC692A;" a="" href="events-calendar.html"> See Calendar</a>
+
+                        <br>
+                        <br>
+
+                        <div class="ae-2">
+                            <p>WorkChew does away with the expense and inconvenience of traditional coworking options, such as coffee shops, and shared workspaces. By providing a community for entrepreneurs, remote workers, and traveling professionals to work, eat, and connect in the cities best restaurants!</p>
+                        </div>
+
+                        <ul class="grid later equal left grid-65 margin-top-5">
+                            <li class="cell-65 col-6-12 ae-3 equalElement"><i style="color:#f47142;"class="material-icons">attach_money</i>
+                                <h3 style="color:#f47142">WorkChew Financial</h3>
+
+                                <p class="tiny">We can all benefit from financial literacy; sign up for our monthly sessions that will discuss a variety of topics on how to set yourself up for financial success.</p>
+                            </li>
                             
-                          
-                               </div>
-               </div>
-            
-             <div id="rightside">
-               <div id="hours" >
-                <table style="width:100%; padding:10px 10px 10px 10px;background-color:white;">
-                                  <tr>
-                                      <th style="font-size:24px;padding:20px 20px 20px 20px;">WorkChew Hours</th>
-                                  </tr>
-                              
-                                  
-                                  <tr>
-                                      <td> <span style="font-weight:bold;float:left;">Mondays:</span> <span style="float:right;">11:00am-4:00pm</span></td>
-                          
-                                  </tr>
-                                  <tr>
-                                       <td> <span style="font-weight:bold;float:left;">Tuesdays:</span><span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                  <tr>
-                                       <td> <span style="font-weight:bold;float:left;">Wednesdays:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                  <tr>
-                                      <td> <span style="font-weight:bold;float:left;">Thursdays:</span><span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                  <tr>
-                                       <td> <span style="font-weight:bold;float:left;">Fridays:</span><span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                 
-                                 
-                              </table>
-               </div>
-               
-             </div>
-              <div id="leftside">
-                 <img id="descriptionimg" src="images/colada/colada4.jpg" width="100%" height="350px">
-                              <div style="padding: 20px 15px 15px 30px;text-align:center;background-color:white;margin-top:-10px;">
-                               <h4>Location Description:</h4>
-                                <p>At Colada Shop we bring people together by transporting them into a space where conversation is flowing, strong coffee is brewed, food & cocktails are made with the flare of Cuban flavor and life.
-Coladas and conversation go hand in hand. Reach for a cup. Stay for a snack. Order a drink. We are committed to providing quality products, excellent service and unparalleled hospitality to our patrons. 
-</p>
-                                <h4>Why We Joined WorkChew:</h4>
-                                <p>To connect with our local community, and provide a place for all people to connect while enjoying wonderful Cuban food and drinks!
-                                </p>
-                             <h4>Speciality:</h4>
-                             <p>Cuban food and coffee</p>
-                             <h4>Food Genre</h4>
-                             <p>Cuban</p>
-                             <h4>Price Point:</h4>
-                             <p><span style="font-weight:600;">$</span>-$$-$$$</p>
-                      
-                          
-                             
-                              <div class="flex-1" id="memberperks" style="margin-top:25px;margin-left:50px; margin-right:50px;margin-bottom:50px;">
-                                    <h4>Member Perks:</h4>
-                                         <ul style="text-align:center;width:50%; margin:0 auto;">
+                            <li class="cell-65 col-6-12 ae-4 equalElement"><i style="color:#75e3ff;"class="material-icons">arrow_forward</i>
+                                <h3 style="color:#75e3ff;">WorkChew Next Chapter</h3>
 
-                                            <li class="opacity-7">
-                                                <img class="chewCheck" src="assets/img/chewCheck.png" />15% off all food 
-                                            </li>
-                                         
-                                            
-                                   
+                                <p class="tiny">Ever wonder what your next step will be? Are you priming yourself for that next promotion? Maybe you're contemplating going off on your own? WorkChew’s Next Chapter is the event series for you. We discuss a variety of topics ranging from understanding your personal brand to how to transition into being an independent consultant. Whatever your ambitions, let WorkChew’s Next Chapter series be your first step.</p>
+                            </li>
+                            <li class="cell-65 col-6-12 ae-5 equalElement"><i style="color:#BA0001;" class="material-icons">devices_other</i>
+                                <h3 style="color:#BA0001;">WorkChew Tech</h3>
 
-                                            
+                                <p class="small">At WorkChew Tech, we work together to sharpen coveted technical skills such as coding, UX, or digital marketing. Have an itch to expand your toolkit? Sign up for one of the WorkChew Tech series and see what you create!</p>
+                            </li>
+                            <li class="cell-65 col-6-12 ae-6 equalElement"><i style="color:#483d8b;" class="material-icons">local_florist</i>
+                                <h3 style="color:#483d8b;">WorkChew Entrepreneur</h3>
 
-                                         </ul>
+                                <p class="small">Recently started your business or are you a seasoned entrepreneur looking toward the future? WorkChew Entrepreneurs is designed to provide a forum to flesh out your ideas and learn best practices to help bring your business to life. </p>
+                            </li>
+                             <li class="cell-65 col-6-12 ae-5 equalElement"><i style="color:#85bb65" class="material-icons">show_chart</i>
+                                <h3 style="color:#85bb65">WorkChew Sales</h3>
 
-                              </div>
-                              
-                      </div>
-              
-                
-             
-               
+                                <p class="small">Let’s face it, the sales industry is evolving at a rapid pace, penetrating new business opportunities has never been harder. The WorkChew Sales series is the forum for sales professionals to come together and share best practices.</p>
+                            </li>
+                              <li class="cell-65 col-6-12 ae-5 equalElement"><i style="color:#ffae00;" class="material-icons">accessibility_new</i>
+                                <h3 style="color:#ffae00;">WorkChew Social </h3>
+
+                                <p class="small">New to the area or maybe just looking to meet new people? Our monthly social events are a great way to get to know people in your local community.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-              <div id="neighborhood" style="clear:both;padding-top:50px;width:80%;margin:0 auto;" >
-                        <h2 class="ae" style="text-align:center;font-weight:500;">Sterling</h2>
-                        <p>Just steps away from Washington DC, Tysons Corner, and Virginia wine country. This Louden County city is centrally located between everything that makes the DMV thrive. Think, modern developments meet a 15 minute drive to the best wineries in the state. Sterling is one of the original city’s that put Loudon County on the map!   </p>
-                
-                        <div style="margin:0 auto;overflow:hidden;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.640567636448!2d-77.3969596847546!3d39.02351197955137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDAxJzI0LjYiTiA3N8KwMjMnNDEuMiJX!5e0!3m2!1sen!2sus!4v1533094407939" width="600" height="240" frameborder="0" style="border:0;display:block;margin:0 auto;padding-bottom:20px;" allowfullscreen></iframe>
-                
-                  </div>
-              </div>
         </div>
     </section>
+
    
     <nav class="panel bottom forceMobileView">
         <div class="sections desktop">
@@ -654,10 +546,11 @@ Coladas and conversation go hand in hand. Reach for a cup. Stay for a snack. Ord
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="locations.html">Locations</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="whyPartner.html">Why Partner</a></li>
                     <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>   
-    
+       
     
 	   </ul>
         </div>
@@ -745,49 +638,7 @@ Coladas and conversation go hand in hand. Reach for a cup. Stay for a snack. Ord
     <p></p>
 
     <p></p>
-    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
-    $(document).on('ready', function() {
-      $('.responsive').slick({
-  dots: true,
-  speed: 300,
-  slidesToShow: 4,
-  infinite: false,
-  slidesToScroll: 2,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-      slidesToShow: 2,
-        slidesToScroll: 2,
-     
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-          dots: false
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-    });
-</script>
-      <script src="js/lightbox.min.js"></script>
- <script>
+    <script>
   window.intercomSettings = {
     app_id: "mvbqpdba"
   };

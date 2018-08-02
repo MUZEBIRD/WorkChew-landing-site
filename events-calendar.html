@@ -2,15 +2,18 @@
 <html>
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106384836-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106384836-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-106384836-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106384836-1');
+    </script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
@@ -18,157 +21,328 @@
     <!-- Page Title -->
     <title>WorkChew</title>
     <!-- Fonts and Material Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet" type="text/css" />
 
 
     <script src="https://use.typekit.net/pql2gmg.js"></script>
     <script>
-    try { Typekit.load({ async: false }); } catch (e) {}
+        try {
+            Typekit.load({
+                async: false
+            });
+        } catch (e) {}
     </script>
     <!-- Styles -->
-
-    <link href="css/slides.css" rel="stylesheet" type="text/css">
-    <link href="css/profile.css" rel="stylesheet" type="text/css">
+    <link href="css/slides.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <!-- Custom Styles -->
     <!--link href="css/custom.css" rel="stylesheet" type="text/css"-->
-      <link rel="stylesheet" type="text/css" href="css/slick.css">
-<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
 
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-       <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
     <script src="js/plugins.js" type="text/javascript" name="plugins"></script>
     <script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
+    <link rel='stylesheet' href='css/fullcalendar.css' />
+
+    <script src='js/moment.min.js'></script>
+    <script src='js/fullcalendar.js'></script>
     <!-- Custom Scripts -->
     <!--script src="js/custom.js" type="text/javascript" name="custom-scripts"></script-->
     <style type="text/css">
-    .bullet {
-        position: relative;
-        right: 0.75rem;
-        list-style-type: disc;
-        font-size: 18px !important;
-    }
+        .bullet {
+            position: relative;
+            right: 0.75rem;
+            list-style-type: disc;
+            font-size: 18px !important;
+        }
     </style>
     <style type="text/css">
-
     </style>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <style type="text/css">
-    .formFrame {
-        position: relative;
-        width: 100%;
-    }
+        .formFrame {
+            position: relative;
+            width: 100%;
+        }
     </style>
 
     <style>
-      td{
+        .flex {
 
-padding:15px 15px 15px 15px; 
-}
-    .flex {
-
-        display: flex;
-    }
+            display: flex;
+        }
 
 
-    .flex-column {
+        .flex-column {
 
-        display: flex;
-        flex-direction: column;
-    }
+            display: flex;
+            flex-direction: column;
+        }
 
-    .flex-wrap {
+        .flex-wrap {
 
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-    .align-items-start {
-
-        align-items: flex-start;
-    }
+            display: flex;
+            flex-wrap: wrap;
+        }
 
 
-    .align-items-center {
+        .align-items-start {
 
-        align-items: center;
-    }
-
-    .justify-content-between {
+            align-items: flex-start;
+        }
 
 
-        justify-content: space-between;
-    }
+        .align-items-center {
 
-    .flex-1 {
+            align-items: center;
+        }
 
-        flex: 1;
-    }
-
-    .w-100 {
-
-        width: 100%;
-    }
+        .justify-content-between {
 
 
-    .h-100 {
+            justify-content: space-between;
+        }
 
-        height: 100%;
-    }
+        .flex-1 {
 
-    .border-1 {
+            flex: 1;
+        }
 
+        .w-100 {
 
-        border: 1px solid black;
-    }
-
-
-    .chewCheck {
-
-        position: relative;
-        height: 20px;
-        width: 20px;
-    }
-    .slideimg{
-      width:150px;
-      height:100px;
-    }
-    .slider {
-        width: 50%;
-        margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
+            width: 100%;
+        }
 
 
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
+        .h-100 {
+
+            height: 100%;
+        }
+
+        .border-1 {
+
+
+            border: 1px solid black;
+        }
+
+
+        .chewCheck {
+
+            position: relative;
+            height: 20px;
+            width: 20px;
+        }
+
+        #calendar {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .fc-toolbar .fc-state-active,
+        .fc-toolbar .ui-state-active {
+            z-index: -1;
+        }
+
+        .fc-toolbar button:focus {
+            z-index: 1;
+        }
+
+        .fc-event-container .fc-event { margin-top: 20px; }
+
+        @media (max-width: 768px) {
+           .fc-toolbar .fc-left{display:none};
+           
+           .fc-toolbar .fc-right{
+            float:left;
+            margin-right:30px;
+           }
+        }
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 2;
+            /* Sit on top */
+            padding-top: 200px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 10px 16px;
+            padding-top: 10px;
+            background-color: #E56333;
+            color: white;
+        }
+
+        .modal-body {
+            padding: 10px 16px;
     
-    .slick-active {
-      opacity: .5;
-    }
+        }
 
-    .slick-current {
-      opacity: 1;
-    }
+        .modal-footer {
+            padding: 3px 16px;
+            background-color: #E56333;
+            color: white;
+        }
+       #submitBtn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 200px;
+  cursor: pointer;
+  margin: 5px;
+  font-family: inherit;
+  font-weight:600;
+}
+
+ #submitBtn:hover {
+  background-color: #e3e5e8;
+}
+
+#eventSignup{
+      display: inline-block;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  width: 200px;
+  cursor: pointer;
+  margin: 5px;
+  font-family: inherit;
+  font-weight:600;
+}
+#eventSignup:hover {
+  background-color: #e3e5e8;
+}
+@media (max-width: 768px){
+    .fc-header-left, fc-header-center, fc-header-right {
+    width: 100%;
+    display: block;
+}
+
+}
+
+@media (max-width: 800px){
+  .fc-today-button {
+   display:none;
+}
+ 
+}
+
+@media (max-width: 450px){
+    .fc-toolbar .fc-right {
+      float:none;
+   display:inline-block;
+}
+  .fc-today-button {
+   display:none;
+}
+.fc-widget-content{
+   display:block;
+   border:none;
+ }
+ .fc-ltr .fc-list-item-marker{
+   display:none;
+ }
+ .fc th, .fc td{
+   border:none;
+ }
+ .fc-list-item-marker, .fc-list-item-time{
+   width:100%;
+
+ }
+ .fc-scroller{
+   height: 500px;
+ }
+ .fc-list-item{
+   
+   border-bottom:1px solid #ddd;
+  
+ }
+.fc-view-container{
+   border-left:1px solid #ddd;
+   border-right:1px solid #ddd;
+}
+}
 
 #login{
   background-color: #EC692A;
@@ -183,9 +357,7 @@ padding:15px 15px 15px 15px;
     font-weight:500;
     font-family: "brandon-grotesque", "sans-serif";
 }
-
-
-#login:hover{
+  #login:hover{
   cursor: pointer;
 }
    #viewprofilebtn{
@@ -201,7 +373,7 @@ padding:15px 15px 15px 15px;
     font-weight:500;
     font-family: "brandon-grotesque", "sans-serif";
 }
-
+ 
     </style>
 
 
@@ -379,18 +551,20 @@ padding:15px 15px 15px 15px;
 
     <nav class="panel top forceMobileView fixed white">
         <div class="sections desktop">
-            <div style="min-width:200px" class="left"><a href="index.html" title="WorkChew"><img height="50" src="assets/img/logo2.png" /> <!-- <svg style="width:150px;height:50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg> --> </a></div>
+            <div style="min-width:200px" class="left"><a href="index.html" title="WorkChew"><img height="50" src="assets/img/logo2.png" />
+                    <!-- <svg style="width:150px;height:50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg> --></a></div>
 
             <div class="right">
                 <ul class="menu uppercase crop">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="locations.html">Locations</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="whyPartner.html">Why Partner</a></li>
                     <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>
                     <button id="login" onclick="location.href = 'https://app.workchew.com/#/Login';">SIGN-UP/LOG-IN</button>
-                   <!-- <button style="margin-left:15px;" id="viewprofilebtn" onclick="workchewConnector.goToProfile();">VIEW PROFILE</button> -->
+                   <!-- <button style="margin-left:15px;" id="viewprofilebtn" onclick="workchewConnector.goToProfile();">VIEW PROFILE</button> --> 
                 </ul>
             </div>
         </div>
@@ -439,19 +613,19 @@ padding:15px 15px 15px 15px;
             </a>
 
             <ul class="mainMenu uppercase">
-		    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-		    <li><a href="membersignup.html">Member Sign Up</a></li>
-		    <li><a href="whyPartner.html">Why Partner</a></li>
-		    <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>   
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="membersignup.html">Member Sign Up</a></li>
+                <li><a href="whyPartner.html">Why Partner</a></li>
+                <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>
 
             </ul>
         </div>
     </nav>
 
-   
+
     <p></p>
 
     <p></p>
@@ -469,123 +643,136 @@ padding:15px 15px 15px 15px;
     <p></p>
 
     <section class="slide whiteSlide" id="about">
-        <div class="content" style="background-color:#edecdc;">
-          <img id="backgroundimg" src="images/colada/colada.jpg" style="position:relative">
-          
-            <div class="container" id="container2">
-               <div id="restaurantname">
-                     <h2 style="padding-left:20px;padding-top:20px;text-align:center;font-size:28px;font-weight:500;">Colada Shop</h2>
-                         <p id="tagline" style="font-style: italic;text-align:center; font-weight:400;">"Come curious, leave cuban" </p>
-                              <div class="responsive" id="imgbox">
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada.jpg" data-lightbox="imggallery" data-title="Colada Shop"><img class="slideimg" src="images/colada/colada.jpg"></a>
-                                  </div>
-         
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada2.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada2.jpg" ></a>
-                                  </div>
-         
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada3.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada3.jpg" ></a>
-                                  </div>
-                             
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada4.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada4.jpg" ></a>
-                                  </div>
-         
-                                  <div style="width: 50px;">
-                                      <a href="images/colada/colada5.jpg" data-lightbox="imggallery"><img class="slideimg" src="images/colada/colada5.jpg" ></a>
-                                  </div>
-         
-                            
-                          
-                               </div>
-               </div>
-            
-             <div id="rightside">
-               <div id="hours" >
-                <table style="width:100%; padding:10px 10px 10px 10px;background-color:white;">
-                                  <tr>
-                                      <th style="font-size:24px;padding:20px 20px 20px 20px;">WorkChew Hours</th>
-                                  </tr>
-                              
-                                  
-                                  <tr>
-                                      <td> <span style="font-weight:bold;float:left;">Mondays:</span> <span style="float:right;">11:00am-4:00pm</span></td>
-                          
-                                  </tr>
-                                  <tr>
-                                       <td> <span style="font-weight:bold;float:left;">Tuesdays:</span><span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                  <tr>
-                                       <td> <span style="font-weight:bold;float:left;">Wednesdays:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                  <tr>
-                                      <td> <span style="font-weight:bold;float:left;">Thursdays:</span><span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                  <tr>
-                                       <td> <span style="font-weight:bold;float:left;">Fridays:</span><span style="float:right;">11:00am-4:00pm</span></td>
-                                  </tr>
-                                 
-                                 
-                              </table>
-               </div>
-               
-             </div>
-              <div id="leftside">
-                 <img id="descriptionimg" src="images/colada/colada4.jpg" width="100%" height="350px">
-                              <div style="padding: 20px 15px 15px 30px;text-align:center;background-color:white;margin-top:-10px;">
-                               <h4>Location Description:</h4>
-                                <p>At Colada Shop we bring people together by transporting them into a space where conversation is flowing, strong coffee is brewed, food & cocktails are made with the flare of Cuban flavor and life.
-Coladas and conversation go hand in hand. Reach for a cup. Stay for a snack. Order a drink. We are committed to providing quality products, excellent service and unparalleled hospitality to our patrons. 
-</p>
-                                <h4>Why We Joined WorkChew:</h4>
-                                <p>To connect with our local community, and provide a place for all people to connect while enjoying wonderful Cuban food and drinks!
-                                </p>
-                             <h4>Speciality:</h4>
-                             <p>Cuban food and coffee</p>
-                             <h4>Food Genre</h4>
-                             <p>Cuban</p>
-                             <h4>Price Point:</h4>
-                             <p><span style="font-weight:600;">$</span>-$$-$$$</p>
-                      
-                          
-                             
-                              <div class="flex-1" id="memberperks" style="margin-top:25px;margin-left:50px; margin-right:50px;margin-bottom:50px;">
-                                    <h4>Member Perks:</h4>
-                                         <ul style="text-align:center;width:50%; margin:0 auto;">
+        <div class="content">
 
-                                            <li class="opacity-7">
-                                                <img class="chewCheck" src="assets/img/chewCheck.png" />15% off all food 
-                                            </li>
-                                         
+            <div class="container">
+               <div class="wrap">
+         <!--<div style="margin-top:150px;margin-left:50px;margin-right:50px; margin-bottom:50px;">
+
+-->
+ <div id="bookmark" style="position:absolute; margin-top:300px;height:10px;z-index:-1;"></div>
+                    <div id="calendar"></div>
+
+
+                    <div id="addEventForm" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" onclick="closebtn();">&times;</span>
+                                <h2 style="margin:0 auto;">Make An Event</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+
+                                    <label for="eventName"><b>Event Name:</b></label>
+                                    <input type="text" placeholder="Event Name" name="eventName" required="">
+                                
+                                      <label for="eventDate"><b>Event Date:</b></label>
+                                        <input type="text" name="date" placeholder="MM/DD/YYYY" id="date" style="z-index:99999 !important;">
+                                        
+
+
                                             
+
+                                    <label for="startTime"><b>Start Time</b></label>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select>
+                                        <option value="am">AM</option>
+                                        <option value="pm">PM</option>
+                                    </select>
+                                    
+                                    <label for="endTime"><b>End Time</b></label>
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select>
+                                        <option value="am">AM</option>
+                                        <option value="pm">PM</option>
+                                    </select>
+                                    
+                                    <label for="eventDescription"><b>Event Description:</b></label>
+                                    <input type="text" placeholder="Describe your event..." name="eventDescription" required="">                                   
+                       
                                    
+                                  
+                                    
+                                   
+                                </form>
+                            </div>
 
-                                            
+                            <div class="modal-footer">
+                                <button type="button" id="submitBtn"  onclick="closebtn();">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Event Detail Modal-->
+                     <div id="eventDetail" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close" onclick="closebtn();">&times;</span>
+                                <h2 id="eventTitle" style="margin:0 auto;"></h2>
+                            </div>
+                            <div class="modal-body">
+                                <form>
 
-                                         </ul>
+                                    <label for="eventType"><b>Event Title:</b></label>
+                                    <p id="eventType"></p>
+                                    <label for="eventInfo"><b>Event Details:</b></label>
+                                    <p id="eventInfo"></p>
+                                    <label for="eventLocation"><b>Location</b></label>
+                                    <p id="eventLocation"></p>
+                                     <label for="eventTimeStart"><b>Start Time:</b></label>
+                                    <p id="eventTimeStart"></p>
+                                    <label for="eventTimeEnd"><b>End Time:</b></label>
+                                    <p id="eventTimeEnd"></p>
+                                
 
-                              </div>
-                              
-                      </div>
-              
-                
-             
-               
+                                    
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                             <a id="eventLink" target="_blank">  <button type="button" id="eventSignup">RSVP</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div
+                     
             </div>
-              <div id="neighborhood" style="clear:both;padding-top:50px;width:80%;margin:0 auto;" >
-                        <h2 class="ae" style="text-align:center;font-weight:500;">Sterling</h2>
-                        <p>Just steps away from Washington DC, Tysons Corner, and Virginia wine country. This Louden County city is centrally located between everything that makes the DMV thrive. Think, modern developments meet a 15 minute drive to the best wineries in the state. Sterling is one of the original city’s that put Loudon County on the map!   </p>
-                
-                        <div style="margin:0 auto;overflow:hidden;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.640567636448!2d-77.3969596847546!3d39.02351197955137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDAxJzI0LjYiTiA3N8KwMjMnNDEuMiJX!5e0!3m2!1sen!2sus!4v1533094407939" width="600" height="240" frameborder="0" style="border:0;display:block;margin:0 auto;padding-bottom:20px;" allowfullscreen></iframe>
-                
-                  </div>
-              </div>
+        </div>
+            </div>
         </div>
     </section>
-   
+
+
     <nav class="panel bottom forceMobileView">
         <div class="sections desktop">
             <div class="left">
@@ -614,7 +801,7 @@ Coladas and conversation go hand in hand. Reach for a cup. Stay for a snack. Ord
                 </a>
             </div>
 
-        <div style="padding-bottom:10px;" class="right"></div>
+            <div style="padding-bottom:10px;" class="right"></div>
         </div>
     </nav>
 
@@ -654,12 +841,12 @@ Coladas and conversation go hand in hand. Reach for a cup. Stay for a snack. Ord
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="locations.html">Locations</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="whyPartner.html">Why Partner</a></li>
                     <li><a href="restaurantsignup.html">Restaurant Sign Up</a></li>   
-    
-    
-	   </ul>
+
+            </ul>
         </div>
     </nav>
 
@@ -745,53 +932,261 @@ Coladas and conversation go hand in hand. Reach for a cup. Stay for a snack. Ord
     <p></p>
 
     <p></p>
-    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
-    $(document).on('ready', function() {
-      $('.responsive').slick({
-  dots: true,
-  speed: 300,
-  slidesToShow: 4,
-  infinite: false,
-  slidesToScroll: 2,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-      slidesToShow: 2,
-        slidesToScroll: 2,
-     
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-          dots: false
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+
+    <script>
+        $(document).ready(function() {
+
+            $('#calendar').fullCalendar({
+                defaultDate: new Date(),
+                editable: false,
+                eventLimit: true, // allow "more" link when too many events
+                defaultView: 'month',
+                
+                views: {
+                  smallMonth: {
+                      type: 'month',
+                      eventLimit: 2 
+   
+                                 }
+                                
+                              },
+                customButtons: {
+                    AddEventBtn: {
+                        text: 'Add Event',
+                        click: function() {
+                            modal.style.display = "block";
+                             document.querySelector('#bookmark').scrollIntoView({ 
+								behavior: 'smooth' 
+							});   
+                  
+
+                        }
+                    }
+                },
+                header: {
+                    left: 'month, agendaWeek, agendaDay',
+                    center: 'title',
+                    right: 'AddEventBtn, today, prev,next'
+                },
+                eventClick: function(event, jsEvent, view) {
+                    document.querySelector('#bookmark').scrollIntoView({ 
+								behavior: 'smooth' 
+							});   
+                    eventDetailModal.style.display="block";
+                    $('#eventType').html(event.type);
+                    $('#eventTitle').html(event.title);
+                    $('#eventInfo').html(event.description);
+                    $('#eventTimeStart').html(event.startTime);
+                    $('#eventTimeEnd').html(event.endTime);
+                    $("#eventInfo").html(event.description);
+                    $("#eventLocation").html(event.location);
+                    $("#eventLink").attr('href', event.url);
+                    $(".modal-header").css("background-color", event.color);
+                    $(".modal-footer").css("background-color", event.color);
+                    $("#eventContent").dialog({
+                        modal: true,
+                        title: event.title
+                    });
+                  
+                    return false;
+                  
+                },
+                events: [{
+                        "type": "WorkChew Happy Hour",
+                        "title": "WorkChew Social",
+                        "allday": "false",
+                        "description": "Are you new to the area or just looking to meet new people? Well our monthly new member happy hour is the place to be.",
+                        "start": '2018-08-20',
+                        "startTime":'<p>August 20th: TBD</p>',
+                        "location":'HalfSmoke',
+                        "end": '2018-08-20',
+                        "endTime":'<p>August 20th: TBD</p>',
+                        "url":'membersignup.html',
+                        "color":'#ffae00'
+
+                    },
+                    {
+                        "title": "WorkChew Social",
+                        "type":"WorkChew Singles",
+                        "allday": "false",
+                        "description": "Did you know that singles have a national day in China just like Valentine's Day? Give online dating a break and come to meet new people in real life. Drink, talk, and dance to form lasting friendships/relationships.",
+                        "start": '2018-08-30',
+                        "startTime":'<p>August 30th: TBD</p>',
+                        "end": '2018-08-30',
+                        "location":'Red Rocks H St',
+                        "endTime":'<p>August 30th: TBD</p>',
+                        "url": "membersignup.html",
+                        "color":'#ffae00'
+                    },
+                    {
+                        "title": "WorkChew Next Chapter",
+                        "type":"Career Pivots",
+                        "allday": "false",
+                        "description": "Sick of your 9-5 and want to make a career pivot? Wondering whether it's the right time to make a transition? In this workshop, we will help you find the right career for you, set up a plan, and start transitioning to a profession that you deem meaningful. Hear from guest speakers who decided to shape their own track and learn about their journey",
+                        "start": '2018-09-04',
+                        "startTime":'<p>September 4th: TBD</p>',
+                        "end": '2018-09-04',
+                        "location":'TBD',
+                        "endTime":'<p>September 4th: TBD</p>',
+                        "url": "membersignup.html",
+                        "color":'#75e3ff'
+                    },
+                    {
+                        "title": "WorkChew Entrepreneur",
+                        "type": "WorkChew Tank",
+                        "allday": "false",
+                        "description": "Do you have business ideas that you'd like to discuss but haven't found the forum to do so? Here's your chance to pitch your idea and receive free a consultation from the WorkChew family about the possibility of launching your own startup.",
+                        "start": '2018-09-12',
+                        "startTime":'<p>September 12th: TBD</p>',
+                        "end": '2018-09-12',
+                        "endTime":'<p>September 12th: TBD</p>',
+                        "location":"TBD",
+                        "url":'membersignup.html',
+                        "color":'#483d8b   '
+
+                    },
+                    {
+                        "title": "WorkChew Entrepreneur",
+                        "type": "WorkChew Accelerate",
+                        "allday": "false",
+                        "description": "We discuss a variety of topics from understanding your personal brand to how to transition into being an independent consultant. We'll help you shape and organize your thoughts, connect you with the right network, and set an implementable plan toward your goal.",
+                        "start": '2018-09-18',
+                        "startTime":'<p>September 18th: TBD</p>',
+                        "end": '2018-09-18',
+                        "location": "TBD",
+                        "endTime":'<p>September 18th: TBD</p>',
+                        "url":'membersignup.html',
+                        "color":'#483d8b'
+
+                    },
+                   {
+                        "title": "WorkChew Sales",
+                        "type": "Session #1",
+                        "allday": "false",
+                        "description": "Intro to prospecting using Story Telling, take a deep dive into the difficulties in prospecting and how to increase your initial close rate.",
+                        "start": '2018-09-24',
+                        "startTime":'<p>September 24th: TBD</p>',
+                        "end": '2018-09-18',
+                        "location": "TBD",
+                        "endTime":'<p>September 24th: TBD</p>',
+                        "url":'membersignup.html',
+                        "color":'#85bb65 '
+
+                    },
+                    {
+                        "title": "WorkChew Meeting",
+                        "allday": "false",
+                        "description": "Weekly Meeting",
+                        "start": '2018-07-18T16:00:00',
+                        "startTime":'<p>September 24th: TBD</p>',
+                        "end": '2018-07-18T18:00:00',
+                        "location": "TBD",
+                        "endTime":'<p>September 24th: TBD</p>',
+                        "url":'membersignup.html',
+                        
+
+                    },
+                ],
+               
+            });
+
+        });
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('addEventForm');
+        
+        var eventDetailModal= document.getElementById('eventDetail');
+
+        // When the user clicks on <span> (x), close the modal
+        function closebtn() {
+            modal.style.display = "none";
+            eventDetailModal.style.display ="none";
+        }
+        
+        window.addEventListener('click', function(event) {
+     if (event.target == modal) {
+                modal.style.display = "none";
+            }
 });
-    });
-</script>
-      <script src="js/lightbox.min.js"></script>
- <script>
+
+window.addEventListener('click', function(event) {
+     if (event.target == eventDetailModal) {
+                eventDetailModal.style.display = "none";
+            }
+});
+
+    </script>
+      <script>
+$( "#date" ).datepicker();
+
+    
+
+    
+    window.onload = function() {
+  calendarView();
+
+};
+    
+    
+    function calendarView() {
+       if ($(window).width()>=800) {
+ var view = $('#calendar').fullCalendar('getView');
+   if(view != 'smallMonth') {
+      $('#calendar').fullCalendar('changeView', 'smallMonth');
+   }if ($(window).width()>=1220){
+      var view2 = $('#calendar').fullCalendar('getView');
+      if(view2 != 'month') {
+      $('#calendar').fullCalendar('changeView', 'month');
+      
+   }
+   }else{
+       return false;
+   }
+   
+}
+else {
+ $('#calendar').fullCalendar('changeView', 'listMonth');
+}
+    }
+    
+    
+$( window ).resize(function() {
+  if ($(window).width()>=800) {
+ var view = $('#calendar').fullCalendar('getView');
+   if(view != 'smallMonth') {
+      $('#calendar').fullCalendar('changeView', 'smallMonth');
+   }if ($(window).width()>=1220){
+      var view2 = $('#calendar').fullCalendar('getView');
+      if(view2 != 'month') {
+      $('#calendar').fullCalendar('changeView', 'month');
+      
+   }
+   }else{
+       return false;
+   }
+   
+}
+else {
+ $('#calendar').fullCalendar('changeView', 'listMonth');
+}
+});
+
+    
+
+  </script>
+
+
+      
+      
+      
+     <script>
   window.intercomSettings = {
     app_id: "mvbqpdba"
   };
 </script>
+     
 <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/mvbqpdba';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
  <script src="js/workchewConnect.js" type="text/javascript" name="main-scripts"></script>
 </body>
